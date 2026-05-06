@@ -52,3 +52,8 @@ export function applyPagination(
   const end = start + pageSize;
   return { paginatedData: data.slice(start, end), totalPages };
 }
+
+export function formatJalaliDate(dateStr: string): string {
+  const [year, month, day] = dateStr.split("-");
+  return `${year}/${month?.padStart(2, "0")}/${day?.padStart(2, "0")}`;
+}
