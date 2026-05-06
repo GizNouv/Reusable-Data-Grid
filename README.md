@@ -7,7 +7,7 @@ A production-ready, highly customizable Data Grid component built with **Next.js
 ## 🚀 Quick Start
 
 ```bash
-git clone [repository-url]
+git clone [https://github.com/GizNouv/Reusable-Data-Grid.git]
 cd reusable-data-grid
 npm install
 npm run dev
