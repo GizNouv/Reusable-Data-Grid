@@ -1,3 +1,5 @@
+![Reusable Data Grid](./public/assets/images/repo/reusable-data-grid-read-me-image.png)
+
 # Reusable Data Grid Module
 
 A production-ready, highly customizable Data Grid component built with **Next.js**, **TypeScript**, and **Tailwind CSS**. Designed to be reused across multiple enterprise projects with minimal configuration.
