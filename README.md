@@ -13,6 +13,7 @@ git clone [https://github.com/GizNouv/Reusable-Data-Grid.git]
 cd reusable-data-grid
 npm install
 npm run dev
+```
 
 Open http://localhost:3000 to see the demo.
 The project uses Next.js API Routes as a mock backend. No additional setup is needed.
@@ -39,7 +40,7 @@ The project uses Next.js API Routes as a mock backend. No additional setup is ne
 ---
 
 ## 📁 Architecture
-
+```
 src/
 ├── app/
 │ ├── api/data/route.ts # Mock API endpoint
@@ -90,7 +91,7 @@ src/
 │
 └── types/
 └── data-grid.types.ts # All TypeScript type definitions
-
+```
 ### Layer Responsibilities
 
 | Layer | Purpose |
@@ -131,6 +132,7 @@ The DataGrid uses a **compound component** architecture rather than a single com
   <DataGrid.Table />
   <DataGrid.Pagination />
 </DataGrid>
+```
 
 ### Context API for State Management
 
@@ -217,7 +219,7 @@ The mock API is built into the Next.js project itself.
   classNames={{...}}                 // Custom CSS classes per slot
   slots={{...}}                      // Custom renderers for states
 />
-
+```
 ### ClassNames API
 
 Override styles for any part of the grid without touching component internals:
@@ -237,7 +239,7 @@ classNames={{
   emptyWrapper: "bg-yellow-50",
   errorWrapper: "bg-red-50",
 }}
-
+```
 ### Slot Renderers
 
 Replace loading, empty, and error states with your own components:
@@ -250,7 +252,7 @@ slots={{
     <MyErrorBanner message={message} onRetry={retry} />
   ),
 }}
-
+```
 ### Boolean Cell Customization
 
 Customize boolean display per column:
@@ -266,7 +268,7 @@ Customize boolean display per column:
     falseClassName: "bg-gray-200 text-gray-500",
   },
 }
-
+```
 ### Custom Cell Renderers
 
 Render any custom JSX for a column:
@@ -281,7 +283,7 @@ Render any custom JSX for a column:
     </span>
   ),
 }
-
+```
 ### Column Filter Configuration
 
 Define how each column can be filtered:
@@ -299,7 +301,7 @@ Define how each column can be filtered:
     ],
   },
 }
-
+```
 ---
 
 ## 🧩 Extensibility Points
